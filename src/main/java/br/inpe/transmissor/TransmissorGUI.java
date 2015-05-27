@@ -40,6 +40,9 @@ public class TransmissorGUI extends JFrame {
 		ligar.setEnabled(true);
 		final JButton desligar = new JButton("Desligar");
 		desligar.setEnabled(false);
+                
+                
+                
 		ligar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				ligar.setEnabled(false);
@@ -47,6 +50,10 @@ public class TransmissorGUI extends JFrame {
 				(threadRTP = new ThreadRTP(porta.getText())).execute();
 			}
 		});
+                
+                
+                
+                
 		desligar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				ligar.setEnabled(true);

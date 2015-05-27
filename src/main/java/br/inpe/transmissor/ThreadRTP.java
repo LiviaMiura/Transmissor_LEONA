@@ -35,7 +35,7 @@ public class ThreadRTP extends SwingWorker<Void, Void> {
             } catch (InterruptedException e) {
             }
             if (ipCliente == null) {
-         
+                System.err.println("IPCliente is null...");
                 try {
                     ServerSocket hostServer = new ServerSocket(1234);
                     Socket socket = hostServer.accept();
@@ -45,7 +45,6 @@ public class ThreadRTP extends SwingWorker<Void, Void> {
                         criou = true;
                     }
                 } catch (IOException e) {
-                           System.err.println("IPCliente is null.yet."+e);
                 }
             }
             if (criou) {

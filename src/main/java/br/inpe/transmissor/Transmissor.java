@@ -79,7 +79,7 @@ public class Transmissor {
 
     private String createProcessor() {
         if (locator == null) {
-            return "Locator esta nulo";
+            return "Locator e nulo";
         }
         DataSource ds;
         try {
